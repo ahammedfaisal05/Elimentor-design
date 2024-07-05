@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM & BOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container my-5">
+       <div class="row">
+        <div class="col-md-3">
+           <div class="card">
+            <div class="card-header">
+                Section Dynamic
+            </div>
+            <div class="card-body">
+                <div class="form-group my-3">
+                    <label for="">Input text :</label>
+                    <input id="heading" class="form-control" type="text">
+                </div>
+
+                <div class="form-group my-3">
+                    <label for="">Text Align :</label>
+                    <br>
+                    <label for="">
+                        <input name="align" checked class="align" type="radio" value="left">
+                    Left
+                    </label>
+                    <label for="">
+                        <input name="align" class="align" type="radio" value="center">
+                    Center
+                    </label>
+                    <label for="">
+                        <input name="align" class="align" type="radio" value="right">
+                    Right
+                    </label>
+                    
+                </div>
+
+                <div class="form-group my-3">
+                    <label for="">Size :</label>
+                    <input id="font_size" class="w-100" min="0" max="100" step="1px" value="20" type="range">
+                </div> 
+
+                <div class="form-group my-3">
+                    <label for="">Color :</label>
+                    <input id="color" type="color">
+                </div> 
+
+                <div class="form-group my-3">
+                    <label for="">Font Family :</label>
+                    <select class="form-control" name="" id="ff">
+                        <option value="">-select-</option>
+                        <option value="Arial">Arial</option>
+                        <option value="poppins">poppins</option>
+                        <option value="impact">impact</option>
+                        <option value="Roboto">Roboto</option>
+                    </select>
+                </div>                
+            </div>                
+
+            </div>
+           </div>
+        </div>
+        <div class="col-md-9">
+            Output :
+            <section>
+                <h1></h1>
+            </section>
+        </div>
+       </div> 
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/elimentor.js"></script>
+</body>
+</html>
